@@ -31,8 +31,8 @@ class DisableTurboBoostBattery : public IOService
 	OSDeclareDefaultStructors(DisableTurboBoostBattery);
 
 public:
-	bool start(IOService *provider);
-	void stop(IOService *provider);
+	bool Start(IOService *provider);
+	void Stop(IOService *provider);
 
 protected:
 	virtual bool powerSourcePublished(IOService * newService, IONotifier * notifier);

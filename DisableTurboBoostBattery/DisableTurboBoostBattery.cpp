@@ -114,7 +114,7 @@ IOReturn DisableTurboBoostBattery::setPowerState(unsigned long whichState, __unu
 	return kIOPMAckImplied;
 }
 
-bool DisableTurboBoostBattery::start(IOService *provider)
+bool DisableTurboBoostBattery::Start(IOService *provider)
 {
 	if (!super::start(provider))
 		return false;
@@ -125,7 +125,7 @@ bool DisableTurboBoostBattery::start(IOService *provider)
 	return true;
 }
 
-void DisableTurboBoostBattery::stop(IOService *provider)
+void DisableTurboBoostBattery::Stop(IOService *provider)
 {
 	stopPM();
 
